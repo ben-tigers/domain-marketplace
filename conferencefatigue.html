@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy conferencefatigue.com</title>
+</head>
+<body>
+  <h1>conferencefatigue.com is For Sale!</h1>
+  <p>Interested in buying this domain? Fill out the form below:</p>
+  
+  <!-- Simple traffic counter -->
+  <p id="counter"></p>
+  <script>
+    const key = "conferencefatigue-counter";
+    let count = localStorage.getItem(key) || 0;
+    count++;
+    localStorage.setItem(key, count);
+    document.getElementById('counter').textContent = "You're visitor #" + count + " (this is browser-based, not global)";
+  </script>
+  
+  <!-- Contact Form (Formspree example, replace YOUR_EMAIL with your email) -->
+  <form action="https://formspree.io/f/YOUR_EMAIL" method="POST">
+    <input type="hidden" name="_subject" value="Domain Inquiry: conferencefatigue.com" />
+    <label>Your email: <input type="email" name="email" required></label><br>
+    <label>Offer or message:<br>
+      <textarea name="message" required></textarea>
+    </label><br>
+    <button type="submit">Send</button>
+  </form>
+  <br>
+  <a href="index.html">Back to all domains</a>
+</body>
+</html>
