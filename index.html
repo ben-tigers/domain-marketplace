@@ -220,12 +220,21 @@
   <section id="contact" style="padding:70px 0 40px 0; background:#f9fbff;">
     <div style="max-width:420px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 2px 16px #2563eb11;padding:32px 24px;">
       <h2 style="margin-top:0;margin-bottom:10px;color:#2563eb;font-family:Montserrat,sans-serif;">Contact Us</h2>
-      <form action="mailto:your@email.com" method="POST" style="display:flex;flex-direction:column;gap:12px;">
-        <label>Name <input type="text" name="name" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #d1d5db;"></label>
-        <label>Email <input type="email" name="email" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #d1d5db;"></label>
-        <label>Message <textarea name="message" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #d1d5db;height:70px;"></textarea></label>
-        <button type="submit" style="margin-top:8px;background:#2563eb;color:#fff;border:none;padding:12px 0;border-radius:6px;font-weight:700;font-size:1.07em;cursor:pointer;">Send Message</button>
-      </form>
+     <form
+  action="https://formspree.io/f/myzwrrbj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
   </section>
 </body>
